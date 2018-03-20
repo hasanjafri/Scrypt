@@ -1,0 +1,49 @@
+.Hero {
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    min-height: 810px;
+    height: 80vh;
+    background-image: url('../images/esportssplash.jpeg');
+}
+
+.Hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(127deg, #000000 0%, rgba(0, 0, 0, 0.61) 27%, rgba(0, 0, 0, 0) 70%);
+}
+.Hero-content {
+    position: relative;
+    padding-left: 10rem;
+    padding-top: 24.7rem;
+}
+
+.Hero-content-meta {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'proxima-nova-condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.6rem;
+}
+.Hero-content-meta span {
+    display: inline-block;
+    padding-right: 2rem;
+}
+.Hero-content-meta .Rating {
+    display: inline-block;
+    padding: 0 0 0 7.2rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+.Hero-content > p {
+    padding: 1.6rem 0 3.6rem 0;
+    width: 660px;
+    text-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.54);
+    opacity: 0.7;
+}
