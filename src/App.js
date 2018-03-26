@@ -4,7 +4,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
 import Sidebar from './components/Sidebar';
-import Splash from './components/Splash';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +26,6 @@ class App extends Component {
                 <div>
                     <AppBar title="Scrypt" onLeftIconButtonClick={this.toggleSidebar}/>
                     <Sidebar isOpen={this.state.sidebarOpen}/>
-                    <Splash/>
                 </div>
             </MuiThemeProvider>
         );
