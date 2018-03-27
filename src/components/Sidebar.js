@@ -11,9 +11,9 @@ export default class Sidebar extends Component {
         return(
             <div>
                 <Menu customCrossIcon={false} customBurgerIcon={false} isOpen={this.props.isOpen} disableOverlayClick>
-                    <FlatButton secondary label='dashboard' fullWidth><Link to="/"/></FlatButton>
-                    <FlatButton secondary label='about us' fullWidth><Link to="/about"/></FlatButton>
-                    <FlatButton secondary label='league of legends' fullWidth />
+                    <FlatButton secondary label='dashboard' fullWidth containerElement={<Link to="/"/>} />
+                    <FlatButton secondary label='about us' fullWidth containerElement={<Link to="/about"/>} />
+                    <FlatButton secondary label='league of legends' fullWidth/>
                     <FlatButton secondary label='dota2' fullWidth/>
                 </Menu>
                 <Route exact={true} path="/" component={Home}/>
